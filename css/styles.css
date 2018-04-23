@@ -1,0 +1,351 @@
+/*generic styles*/
+*{box-sizing: border-box;}
+
+html{
+    font-size: 1em;
+}
+
+body {
+    margin: 0px;
+    color: #393c3e;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.45;
+   
+}
+
+p {
+    margin-bottom: 1.3em;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3em;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+h3 {font-size: 1.7em;}
+
+h4 {font-size: 1.414em;}
+
+small {font-size:0.707em;}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 100%;
+    overflow: hidden;
+    
+}
+/*mobile styles*/
+
+/*header styles*/
+
+
+.hero_banner{
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat; 
+    box-shadow: 0 0 14px #444;
+}
+
+header{
+    padding: 2%;
+    color: #fff;  
+}
+
+div.header_intro{
+    padding: 3%;
+}
+
+div.form_container{
+    background-color:rgba(0,0,0,0.4);
+    padding: 8%; 
+}
+
+.form_heading{
+    text-align: center;
+    color: #e75d2a;
+}
+
+.form-control{
+    border:1px solid #444;
+    border-radius: 5px;
+    padding: 9px 10px;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border:1px solid #e75d2a;
+    box-shadow: 0 0 4px #e75d2a;
+}
+
+input{
+    margin-bottom: .9em;
+    }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #e75d2a;
+    font-weight: 700;
+    font-size: 1em;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c74b1d;
+}
+
+
+/*main styles Benifits and video */
+
+.benifits {
+    padding:3%;
+}
+
+.benifitslist ol{
+	            counter-reset: li;
+				list-style: none;
+				*list-style: decimal;
+				padding: 0;
+                margin-left: 2em;
+				margin-bottom: 4em;
+}
+
+.benifitslist li{
+				position: relative;
+				display: block;
+				padding: .4em .4em .4em 2em;
+				*padding: .4em;
+				margin: .5em 0;
+				color: #444;
+				text-decoration: none;
+				-moz-border-radius: .3em;
+				-webkit-border-radius: .3em;
+				border-radius: .3em;
+			}
+
+
+.benifitslist li:before{
+				content: counter(li);
+				counter-increment: li;
+				position: absolute;	
+				left: -1.3em;
+				top: 50%;
+				margin-top: -1.3em;
+				background: #e75d2a;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border: .3em solid #fff;
+				text-align: center;
+				font-weight: bold;
+				-moz-border-radius: 2em;
+				-webkit-border-radius: 2em;
+				border-radius: 2em;
+				color:#FFF;
+			}
+
+.videocontainer {
+    padding: 3%;
+    
+}
+
+video {
+    width: 100%;
+    background-color: #e75d2a;
+}
+
+
+
+
+
+/*main styles-testimonials*/
+
+.testimonials{
+    border-top: 1px solid #525557;
+}
+
+figure{
+    margin-bottom: 0px;
+}
+
+figure img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+blockquote p:first-of-type:before {
+    content: open-quote;
+    color: #e75d2a;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+blockquote p:last-of-type:after {
+    content: close-quote;
+    color: #e75d2a;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+blockquote p{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+IMG.stars{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+.col_1{
+    font-style: italic;
+	margin-bottom:2%;
+}
+    
+.col_3{	
+    font-style: italic;
+	margin-bottom:2%;   
+}
+/*footer styles*/
+
+.footer_bck{
+    background-color: #e75d2a;
+    padding: 2%;
+    color: white;
+    text-align: center;
+}
+
+/*breakpoint for larger mobile screens*/
+@media only screen and (min-width: 440px){
+    div.form_container{
+    width: 65%;
+    margin: auto;
+    }
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+
+div.header_intro{
+    display: inline-block;
+    width: 65%;
+    padding-right: 3%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+div.form_container{
+    display: inline-block;
+    width: 35%;
+    padding: 3%;
+    margin-top: 4%;
+}
+    
+.benifits {
+    display: inline-block;
+    width: 65%;
+    margin-right: -4px;
+    vertical-align: top; 
+}
+
+.videocontainer {
+    display: inline-block;
+    width: 35%;
+    padding-left: 0px;
+}
+
+    
+.col_1{
+    display: inline-block;
+    width: 33.3%;
+    font-style: italic;
+	margin-bottom:2%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+    
+.col_3{	
+    display: inline-block;
+    width: 33.3%;
+    font-style: italic;
+	margin-bottom:2%;   
+}
+
+blockquote{
+    margin: 11%;
+}
+    
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1024px){
+    
+div.header_intro{
+    width: 65%;
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+div.form_container{
+    width: 35%;
+    margin-top: 3%;
+}
+
+    header{
+        padding-left: 0px;
+    }
+    
+.benifits {
+    display: inline-block;
+    width: 64%;
+    margin-right: -4px;
+    vertical-align: top;
+    font-size: 1.1em;
+}
+
+.videocontainer {
+    display: inline-block;
+    width: 35%;
+    padding-left: 0px;
+}
+    
+
+}
+    
